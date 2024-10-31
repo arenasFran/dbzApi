@@ -35,7 +35,7 @@ export const CharacterList = () => {
                 {characters.map(character => (
                     <Link to={`/character/${character.id}`} key={character.id}>
                         <div className="bg-yellow-700 rounded-lg shadow-lg overflow-hidden transition-transform transform hover:scale-105 cursor-pointer hover:shadow-2xl">
-                            <img src={character.image} alt={character.name} className="w-full h-48 object-contain transition-transform transform hover:scale-110" />
+                            <img src={character.image} alt={character.name} className="w-full mt-5 h-48 object-contain transition-transform transform hover:scale-110" />
                             <div className="p-4">
                                 <h2 className="text-xl font-semibold text-white text-center">{character.name}</h2>
                                 <p className="text-yellow-200 text-center mt-1">Haz clic para más info!</p>
